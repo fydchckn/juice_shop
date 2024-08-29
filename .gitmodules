@@ -1,0 +1,3 @@
+[submodule "juice_shop"]
+	path = juice_shop
+	url = https://github.com/fydchckn/juice_shop.git
