@@ -129,12 +129,18 @@ display: none;
 /*  for media query    */
 
 @media (max-width: 50em){
+  .primary-header[data-overlay]{
+    position: relative;
+    z-index: 999;
+  }
     .first-navagation{
       display: none;
 
-      position: absolute;
+      position: fixed;
       inset: 7rem 1em auto;
       border: 1px solid;
+      margin-inline: auto;
+      max-width: 30em;
       background-color: hsl(0, 0%, 100%);
       border-radius: 1em;
       border: none;
@@ -164,17 +170,29 @@ display: none;
       background-image: linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 0.8));
     }   
 
-    #mobile-toggle{
+    .mobile-toggle{
       display: block;
       position: fixed;
       top: 3em;
       right: 2em;
-      z-index: 100;
-      
-      background: none;
       border: none;
+      background: transparent;
       cursor: pointer;
+      width: 2em;
+      height: 2em;
+
+      background-image: url(/images/icon-hamburger.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
     }
+
+    .mobile-toggle[aria-expanded="true"]{
+      background-image: url(/images/icon-close.svg);
+    }
+    
+
+
     #column{
       display: none;
     }
