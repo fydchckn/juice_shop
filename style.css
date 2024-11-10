@@ -181,14 +181,14 @@ display: none;
       width: 2em;
       height: 2em;
 
-      background-image: url(/images/icon-hamburger.svg);
+      background-image: url(./images/icon-hamburger.svg);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
     }
 
     .mobile-toggle[aria-expanded="true"]{
-      background-image: url(/images/icon-close.svg);
+      background-image: url(./images/icon-close.svg);
     }
     
 
@@ -538,6 +538,9 @@ display: none;
 .text-green{
   color: var(--clr-green);
 }
+.text-white{
+  color: var(--clr-white);
+}
 
 
 /* background */
@@ -604,7 +607,166 @@ font-size: var(--fs-16px);
 }
 
 
+/* hover images */
 
+input[type="radio"]{
+  display: none;
+}
+input[type="radio"]:checked + label[type="productimages"]{
+ border-color: var(--clr-green);
+ background-color: var(--clr-green); 
+}
+
+
+label[type="productimages"] {
+  display: inline-block;
+  cursor: pointer;
+  margin: 10px;
+  border: 2px solid transparent;
+  padding: 5px; 
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  
+}
+
+label[type="productimages"]:hover{
+  border-color: #3e5c24;
+}
+
+
+
+
+
+ 
+
+.logincontainer{
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 5em;
+  
+}
+.loginleft{
+  border-radius: 1em 0em 0em 1em;
+  padding: 3em;
+  width: 350px;
+  height: 400px;
+  background-color: hsla(0, 0%, 12%, 0.055);
+}
+.loginright{
+  background-color:var(--clr-green);
+  padding: 3em;
+  width: 350px;
+  height: 400px;
+  border-radius: 0em 1em 1em 0em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.signup_svg{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+.heightright{
+  height: 100vh;
+}
+.myloginform{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+}
+.form-group input{
+  text-align: center;
+  padding: 0.5em 0.7em 0.5em 0.7em;
+  border-radius: 50px;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-16px);
+  color: var(--clr-green);
+  background-color: hsla(0, 0%, 12%, 0.080);
+  border: none;
+  outline: none;
+}
+.showpass{
+  margin-top: 1em;
+}
+
+button[type="signup"]{
+  background-color: var(--clr-white);
+  color: var(--clr-green);
+  padding: 0.3em 25px 0.3em 25px;
+}
+.containerright{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 50vh;
+}
+
+
+
+/* register page */
+
+
+.registercontainer{
+  border-radius: 1em;
+  padding: 3em;
+  max-width: 600px;
+  height: 400px;
+  background-color: hsla(0, 0%, 12%, 0.055);
+}
+.formregister{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.formregister label{
+  text-align: left;
+  width: 100%;
+  margin-bottom: 1em;
+}
+.formcontainer{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:3.5em;
+}
+.formregister input{
+  text-align: center;
+  padding: 0.5em 0.7em 0.5em 0.7em;
+  border-radius: 50px;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-16px);
+  color: var(--clr-green);
+  background-color: hsla(0, 0%, 12%, 0.080);
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.btnregister{
+  grid-column: 1 / -1; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em; 
+}
+
+.charts{
+  height:320px;
+  width: 500px;
+}
 
 
 

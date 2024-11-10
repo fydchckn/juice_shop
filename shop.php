@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
-    <title>Juice shop</title>
+    <title>Juice Shop</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="index.js" ></script>
 </head>
@@ -22,6 +22,7 @@
                 </ul>
 
                 <button class="mobile-toggle" aria-controls="first-navagation" aria-expanded="false" id="mobile-toggle">
+                    
                     <span class="hidden">Menu</span>
                 </button>
 
@@ -32,12 +33,14 @@
                         <li><a href="aboutus.html" class="text-green | fw-200 | fs-primary-text | ff-poppins">About us</a></li>
                         <li><a href="contact.html" class="text-green | fw-200 | fs-primary-text | ff-poppins">Contact</a></li>
                         <li><a href="productstatistic.php" class="text-green | fw-200 | fs-primary-text | ff-poppins">Products</a></li>
+
                     </ul>
                 </nav> 
                 
                 <div class="column" id="column">
-                   
-                    <a href="shop.html"><button class="button-cart"><img src="./images/cart.svg" alt="cart" style="padding-left: 1.5em;" class="img-cart"></button></a>
+                  
+                    <form action="" method="post">
+                        <a href="shop.html"><button class="button-cart" name="submit_button"><img src="./images/cart.svg" alt="cart" style="padding-left: 1.5em;" class="img-cart"></button></a>
                 </div>
             </div>
         </div>
@@ -48,55 +51,97 @@
     <main>
         <section class="padding-block-900">
             <div class="container">
-                <div class="even-columns">
-                    <div class="flow" style="--spacer:2em">
-                        <h1 class="ff-syne | fw-700 | fs-primary-heading | text-green" style="max-width: 20ch;">Freshly pressed, straight to your door</h1>
-                        <p class="ff-poppins | fw-200 | fs-secondary-heading | text-green">At Pure Flave, we’re dedicated to goodness in every sip. Delicious, fresh juice, just as nature intended.</p>
-                        <a href="shop.html"><button class="button | ff-poppins | fw-200 | fs-primary-text">Shop</button></a>
-                    </div>
-                    <div>
-                        <img src="./images/pureflave.png" alt="">
-                    </div>
+                <div class="statement" style="margin-top: -100px;">
+                    <h1 class="fs-third-heading | fw-700 | ff-syne | text-green" style="line-height: 2em;">Shop Flaves</h1>
+                    <p class="fs-primary-text | fw-300 | ff-poppins | text-green" style="line-height: 2em;">Cold-pressed, 100% organic, packed with vitamins, nutrients, and natural goodness.</p><br>
+                </div>  
+                <div class="juices">
+                <div>
+                    <input type="radio" id="green_punch" name="juices" value="green_punch">
+                    <label for="green_punch" type="productimages">
+                        <img  src="./images/gp.webp" alt="green_punch">
+                    </label>
+                    <a style="padding-left: 1em;" href="" class="fs-secondary-heading | fw-400 | ff-poppins | text-green">Green Punch</a>
+                    <p style="padding-left: 1.2em;" class="fs-primary-text | fw-300 | ff-poppins | text-black">₱250.50</p>
+                </div>
+                <div>
+                    <input type="radio" id="apple_punch" name="juices" value="apple_punch">
+                    <label for="apple_punch" type="productimages">
+                        <img src="./images/ac.webp" alt="apple_punch" >
+                    </label>
+                    <a style="padding-left: 1em;" href="" class="fs-secondary-heading | fw-400 | ff-poppins | text-green">Apple Citrus</a>
+                    <p style="padding-left: 1.2em;" class="fs-primary-text | fw-300 | ff-poppins | text-black">₱185.30</p>
+                </div>
+                <div>
+                    <input type="radio" id="orange_zest" name="juices" value="orange_zest">
+                    <label for="orange_zest" type="productimages">
+                        <img style="width: 100%;"  src="./images/oz.webp" alt="orange_zest" >
+                    </label>
+                    <a style="padding-left: 1em;" href="" class="fs-secondary-heading | fw-400 | ff-poppins | text-green">Orange Zest</a>
+                    <p style="padding-left: 1.2em;" class="fs-primary-text | fw-300 | ff-poppins | text-black">₱399.99</p>
+                </div>
+                <div>
+                    <input type="radio" id="pink_grapefruit" name="juices" value="pink_grapefruit">
+                    <label for="pink_grapefruit" type="productimages">
+                        <img src="./images/pg.webp" alt="pink_grapefruit" >
+                    </label>
+                    <a style="padding-left: 1em;" href="" class="fs-secondary-heading | fw-400 | ff-poppins | text-green">Pink Grapefruit</a>
+                    <p style="padding-left: 1.2em;" class="fs-primary-text | fw-300 | ff-poppins | text-black">₱175.20</p>
+                </div>
+                <div>
+                    <input type="radio" id="ginger_tangerine" name="juices" value="ginger_tangerine">
+                    <label for="ginger_tangerine" type="productimages">
+                        <img src="./images/gt.webp" alt="ginger_tangerine" >
+                    </label>
+                    <a style="padding-left: 1em;" href="" class="fs-secondary-heading | fw-400 | ff-poppins | text-green">Ginger Tangerine</a>
+                    <p style="padding-left: 1.2em;" class="fs-primary-text | fw-300 | ff-poppins | text-black">₱234.60</p>
+                </div>
+                <div>
+                    <input type="radio" id="raspberry_lime" name="juices" value="raspberry_lime">
+                    <label for="raspberry_lime" type="productimages">
+                        <img src="./images/rl.webp" alt="raspberry_lime">
+                    </label>
+                    <a style="padding-left: 1em;" href="" class="fs-secondary-heading | fw-400 | ff-poppins | text-green">Raspberry Lime</a>
+                    <p style="padding-left: 1.2em;" class="fs-primary-text | fw-300 | ff-poppins | text-black">₱300.30</p>
+                </div>
+                   
                 </div>
             </div>
+        </form>
             <hr>
-        </section>
+        </section >
     </main>
 
     <footer>
         <div class="container">
-            <div class="footer-wrapper | even-columns">
-                
-                <div class="row1">
-                    <ul class="flow" style="--spacer:1em">
+            <div class="even-columns">
+                <div>
+                    <ul>
+                        <div class="flow" style="--spacer:1em">
                         <li><a href="terms-conditions.html" class="ff-poppins | fw-200 | fs-secondary-text | text-green">Terms & Conditions</a></li>
                         <li><a href="privacy.html" class="ff-poppins | fw-200 | fs-secondary-text | text-green">Privacy Policy</a></li>
                         <li><a href="shipping.html" class="ff-poppins | fw-200 | fs-secondary-text | text-green">Shipping Policy</a></li>
                         <li><a href="refund.html" class="ff-poppins | fw-200 | fs-secondary-text | text-green">Refund Policy</a></li>
-                   </ul> 
+                    </div> </ul> 
                 </div>
-
-                <div class="row2">
-                    <ul class="flow" style="--spacer:1em">
+                <div>
+                    <ul>
+                        <div class="flow" style="--spacer:1em">
                         <li><a href="cookie.html" class="ff-poppins | fw-200 | fs-secondary-text | text-green">Cookie Policy​</a></li>
                         <li><a href="#" class="ff-poppins | fw-200 | fs-secondary-text | text-green">FAQ​</a></li>
                         <li><a href="#" class="ff-poppins | fw-200 | fs-secondary-text | text-green">Payment Methods</a></li>
-                    </ul>
+                    </div></ul>
                 </div>
-
-                
-                <div class="row3 | flow" style="--spacer:1em">
+                <div class="flow" style="--spacer:1em">
                     <p class="ff-poppins | fw-200 | fs-secondary-text | text-green">Address:</p>
                     <p class="ff-poppins | fw-200 | fs-secondary-text | text-green">500 Terry Francine St.</p>
                     <p class="ff-poppins | fw-200 | fs-secondary-text | text-green">San Francisco, CA 94158</p>
                 </div>
-
-                <div class="row4">
+                <div>
                     <p class="ff-poppins | fw-200 | fs-secondary-text | text-green" style="line-height: 2.3em;">Contact:</p>
                     <a href="#" class="ff-poppins | fw-200 | fs-secondary-text | text-green" style="line-height: 2.3em;">info@mysite.com</a>
                     <p class="ff-poppins | fw-200 | fs-secondary-text | text-green" style="line-height: 2.3em;">123-456-7890</p>
-
-
+                    
                     <div class="icons">
                         <ul class="social-links">
                             <li>
@@ -127,15 +172,66 @@
                                       </svg>
                                 </a>
                             </li>
-                        </ul>  
-                    </div>
+                        </ul>
+
                 </div>
             </div>
         </div>
     </footer >
 
 
-
 </body>
 </html>
 
+<?php
+include('database.php');
+
+$juices = $_POST['juices'];
+
+if(isset($_POST['submit_button'])){
+    
+    if($juices === "green_punch"){
+        $productname = "Green Punch";
+        $productprice = 250.50;
+    }
+    else if($juices === "apple_punch"){
+        $productname = "Apple Bunch";
+        $productprice = 185.30;
+    }
+    else if($juices === "orange_zest"){
+        $productname = "Orange_Zest";
+        $productprice = 399.99;
+    }
+    else if($juices === "pink_grapefruit"){
+        $productname = "Pink Grapefruit";
+        $productprice = 175.20;
+    }
+    else if($juices === "ginger_tangerine"){
+        $productname = "Ginger Tangerine";
+        $productprice = 234.60;
+    }
+    else if($juices === "raspberry_lime"){
+        $productname = "Raspberry Lime";
+        $productprice = 300.30;
+    }
+
+
+     try {
+         $sql = "INSERT INTO juices VALUES('$productname','$productprice')";
+         mysqli_query($conn, $sql);
+         echo "<script type='text/javascript'>
+            alert('purchase successfully!');
+           </script>";
+     } catch (mysqli_sql_exception) {
+         echo "<script type='text/javascript'>
+            alert('could not add data');
+           </script>";
+     }
+
+}
+
+
+
+
+mysqli_close($conn)
+?>

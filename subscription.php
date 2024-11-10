@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
     <title>Juice Shop</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="index.js" ></script>
+    <script defer src="index.js"></script>
 </head>
+
 <body class="bg-white">
     <header class="primary-header">
         <div class="container" style="padding: 2em;">
@@ -23,7 +24,7 @@
                 </ul>
 
                 <button class="mobile-toggle" aria-controls="first-navagation" aria-expanded="false" id="mobile-toggle">
-                    
+
                     <span class="hidden">Menu</span>
                 </button>
 
@@ -36,11 +37,12 @@
                         <li><a href="productstatistic.php" class="text-green | fw-200 | fs-primary-text | ff-poppins">Products</a></li>
 
                     </ul>
-                </nav> 
-                
+                </nav>
+
                 <div class="column" id="column">
                     
-                    <a href="shop.html"><button class="button-cart"><img src="./images/cart.svg" alt="cart" style="padding-left: 1.5em;" class="img-cart"></button></a>
+                    <form action="" method="post">
+                        <a href="shop.html"><button class="button-cart" name="submit_button"><img src="./images/cart.svg" alt="cart" style="padding-left: 1.5em;" class="img-cart"></button></a>
                 </div>
             </div>
         </div>
@@ -51,53 +53,40 @@
     <main>
         <section class="padding-block-900">
             <div class="container">
-                <div class="even-columns" style="gap: 20rem;
-                                                padding-bottom: 4em;">
-                    <div class="flow" style="--spacer:2em">
-                        <h1 class="ff-syne | fs-third-heading | text-green | fw-700" >Get in Touch</h1>
-                        <p class="ff-poppins | fw-400 | text-black | fs-primary-text" style="max-width:40ch;">Fill in the form with your questions, comments and concerns, and we will get right back to you.</p>
-                        <hr>
-                        <h2 class="ff-syne | fs-secondary-heading | text-green | fw-700">Otherways to reach us</h2>
-                        <div class="text">
-                            <div>
-                                <p class="ff-poppins | fs-primary-text | text-black | fw-400">Wholesale enquiries:</p>
-                                <a href="#" class="ff-poppins | fs-primary-text | text-green | fw-400">info@mysite.com</a>
-                            </div>
-                            <div id="myp">
-                                <p class="ff-poppins | fs-primary-text | text-black | fw-400">PR, press or partnerships:</p>
-                                <a href="#" class="ff-poppins | fs-primary-text | text-green | fw-400">info@mysite.com</a>
-                            </div>
-                        </div>
-        
-                        <p class="ff-poppins | fs-primary-text | text-black | fw-400">Address:</p>
-                        <p class="ff-poppins | fs-primary-text | text-black | fw-400">500 Terry Francine St.</p>
-                        <p class="ff-poppins | fs-primary-text | text-black | fw-400">San Francisco,</p>
-                        <p class="ff-poppins | fs-primary-text | text-black | fw-400">CA 94158</p>
+                <div class="statement | flow" style="--spacer:1em">
+                    <h1 class="fs-third-heading | fw-700 | ff-syne | text-green">Subscription</h1>
+                    <p class="fs-primary-text | fw-300 | ff-poppins | text-green" style="max-width: 100%;">Subscribe to any of our plans and select how often you want <br> them delivered</p><br>
+                </div>
+                <div class="juices">
+                    <div>
+                        <input type="radio" name="bundles" value="total_care" id="total_care">
+                        <label for="total_care" type="productimages">
+                            <img src="./images/tc.webp" alt="juice">
+                        </label>
+                        <a style="padding-left: 1em;" href="" class="fs-secondary-heading | fw-400 | ff-poppins | text-green">Total Care</a>
+                        <p style="padding-left: 1.2em;" class="fs-primary-text | fw-300 | ff-poppins | text-black">₱599.99</p>
                     </div>
-                    <div class="forms">
-                        <form action="purelave.html" method="post" class="myform">
-                            <div class="text2">
-                                <div>
-                                    <label for="" class="ff-poppins | fw-400 | text-green | fs-primary-text">Firstname *</label><br>
-                                    <input type="text">
-                                </div>
-                                <div>
-                                    <label for="" class="ff-poppins | fw-400 | text-green | fs-primary-text">Last Name *</label><br>
-                                    <input type="text">
-                                </div>
-                            </div><br>
-                            <label for="" class="ff-poppins | fw-400 | text-green | fs-primary-text">Email *</label><br>
-                            <input type="email" style="line-height: 2em;"><br><br>
-                            <label for="" class="ff-poppins | fw-400 | text-green | fs-primary-text">Message</label><br>
-                            <input type="text"><br><br><br>
-                            <div class="my-submit-btn">
-                                <button class="button" data-type="submit-btn">Submit</button>
-                            </div>
-                        </form>
+                    <div>
+                        <input type="radio" name="bundles" value="detox_plan" id="detox_plan">
+                        <label for="detox_plan" type="productimages">
+                            <img src="./images/dp.webp" alt="juice">
+                        </label>
+
+                        <a style="padding-left: 1em;" href="" class="fs-secondary-heading | fw-400 | ff-poppins | text-green">Detox Plan</a>
+                        <p style="padding-left: 1.2em;" class="fs-primary-text | fw-300 | ff-poppins | text-black">₱899.75</p>
                     </div>
-    
+                    <div>
+                        <input type="radio" name="bundles" value="full_day_cleanses" id="full_day_cleanses">
+                        <label for="full_day_cleanses" type="productimages">
+                            <img style="width: 100%;" src="./images/fdc.webp" alt="juice">
+                        </label>
+
+                        <a style="padding-left: 1em;" href="" class="fs-secondary-heading | fw-400 | ff-poppins | text-green">Full-Day Cleanses</a>
+                        <p style="padding-left: 1.2em;" class="fs-primary-text | fw-300 | ff-poppins | text-black">₱1,199.50</p>
+                    </div>
                 </div>
             </div>
+            </form>
             <hr>
         </section>
     </main>
@@ -108,19 +97,21 @@
                 <div>
                     <ul>
                         <div class="flow" style="--spacer:1em">
-                        <li><a href="terms-conditions.html"  class="ff-poppins | fw-200 | fs-secondary-text | text-green">Terms & Conditions</a></li>
-                        <li><a href="privacy.html" class="ff-poppins | fw-200 | fs-secondary-text | text-green">Privacy Policy</a></li>
-                        <li><a href="shipping.html" class="ff-poppins | fw-200 | fs-secondary-text | text-green">Shipping Policy</a></li>
-                        <li><a href="refund.html" class="ff-poppins | fw-200 | fs-secondary-text | text-green">Refund Policy</a></li>
-                    </div> </ul> 
+                            <li><a href="terms-conditions.html" class="ff-poppins | fw-200 | fs-secondary-text | text-green">Terms & Conditions</a></li>
+                            <li><a href="privacy.html" class="ff-poppins | fw-200 | fs-secondary-text | text-green">Privacy Policy</a></li>
+                            <li><a href="shipping.html" class="ff-poppins | fw-200 | fs-secondary-text | text-green">Shipping Policy</a></li>
+                            <li><a href="refund.html" class="ff-poppins | fw-200 | fs-secondary-text | text-green">Refund Policy</a></li>
+                        </div>
+                    </ul>
                 </div>
                 <div>
                     <ul>
                         <div class="flow" style="--spacer:1em">
-                        <li><a href="cookie.html" class="ff-poppins | fw-200 | fs-secondary-text | text-green">Cookie Policy​</a></li>
-                        <li><a href="#" class="ff-poppins | fw-200 | fs-secondary-text | text-green">FAQ​</a></li>
-                        <li><a href="#" class="ff-poppins | fw-200 | fs-secondary-text | text-green">Payment Methods</a></li>
-                    </div></ul>
+                            <li><a href="cookie.html" class="ff-poppins | fw-200 | fs-secondary-text | text-green">Cookie Policy​</a></li>
+                            <li><a href="#" class="ff-poppins | fw-200 | fs-secondary-text | text-green">FAQ​</a></li>
+                            <li><a href="#" class="ff-poppins | fw-200 | fs-secondary-text | text-green">Payment Methods</a></li>
+                        </div>
+                    </ul>
                 </div>
                 <div class="flow" style="--spacer:1em">
                     <p class="ff-poppins | fw-200 | fs-secondary-text | text-green">Address:</p>
@@ -131,45 +122,91 @@
                     <p class="ff-poppins | fw-200 | fs-secondary-text | text-green" style="line-height: 2.3em;">Contact:</p>
                     <a href="#" class="ff-poppins | fw-200 | fs-secondary-text | text-green" style="line-height: 2.3em;">info@mysite.com</a>
                     <p class="ff-poppins | fw-200 | fs-secondary-text | text-green" style="line-height: 2.3em;">123-456-7890</p>
-                    
+
                     <div class="icons">
                         <ul class="social-links">
                             <li>
                                 <a href="https://www.facebook.com/" target="_blank">
                                     <svg class="social-icons">
                                         <use xlink:href="/images/social-icons.svg#facebook"></use>
-                                      </svg>
+                                    </svg>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.instagram.com/" target="_blank">
                                     <svg class="social-icons">
                                         <use xlink:href="/images/social-icons.svg#instagram"></use>
-                                      </svg>
+                                    </svg>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.twitter.com/" target="_blank">
                                     <svg class="social-icons">
                                         <use xlink:href="/images/social-icons.svg#twitter"></use>
-                                      </svg>
+                                    </svg>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.tiktok.com/" target="_blank">
                                     <svg class="social-icons">
                                         <use xlink:href="/images/social-icons.svg#tiktok"></use>
-                                      </svg>
+                                    </svg>
                                 </a>
                             </li>
                         </ul>
 
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer >
-
-
-
+    </footer>
 </body>
+
 </html>
+
+<?php
+include('database.php');
+
+$bundles = $_POST['bundles'];
+$product1 = "Raspberry Lime";
+$product2 = "Green Punch";
+$product6 = "Orange Zest";
+$product4 = "Apple Citrus";
+$product6 = "Pink Grape Fruit";
+$product6 = "Ginger Tangerine";
+
+
+
+if (isset($_POST['submit_button'])) {
+    if ($bundles === "total_care") {
+        $bundles = "Total Care";
+        $productprice = 599.99;
+        $products_included = $product1 . " + " . $product2 . " + " . $product3;
+    } else if ($bundles === "detox_plan") {
+        $bundles = "Detox Plan";
+        $productprice = 899.75;
+        $products_included = $product1 . " + " . $product4 . " + " . $product4;
+    } else if ($bundles === "full_day_cleanses") {
+        $bundles = "Full Day Cleanses";
+        $productprice = 1199;
+        $products_included = $product6 . " + " . $product6. " + " . $product3;
+  
+    }
+
+
+    try {
+        $sql = "INSERT INTO juice_bundle VALUES('$bundles','$productprice','$products_included')";
+        mysqli_query($conn, $sql);
+
+        echo "<script type='text/javascript'>
+           alert('purchase successfully!');
+          </script>";
+    } catch (mysqli_sql_exception) {
+        echo "<script type='text/javascript'>
+           alert('could not add data');
+          </script>";
+    }
+}
+
+
+mysqli_close($conn)
+?>

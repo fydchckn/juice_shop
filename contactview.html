@@ -12,14 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
     <title>Juice Shop</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="/index.js" ></script>
+    <script defer src="index.js" ></script>
 </head>
 <body class="bg-white">
     <header class="primary-header">
         <div class="container" style="padding: 2em;">
             <div class="nav-wrapper">
                 <ul class="title">
-                    <li><a class="text-green | fw-600 | fs-23px | ff-poppins" href="purelave.html">pure flave</a></li>
+                    <li><a class="text-green | fw-600 | fs-23px | ff-poppins" href="purelaveview.html">pure flave</a></li>
                 </ul>
 
                 <button class="mobile-toggle" aria-controls="first-navagation" aria-expanded="false" id="mobile-toggle">
@@ -29,16 +29,18 @@
 
                 <nav class="first-navagation" id="first-navagation">
                     <ul class="nav-list">
-                        <li><a href="shop.html" class="text-green | fw-200 | fs-primary-text | ff-poppins">Shop</a></li>
-                        <li><a href="subscription.html" class="text-green | fw-200 | fs-primary-text | ff-poppins">Subscription</a></li>
-                        <li><a href="aboutus.html" class="text-green | fw-200 | fs-primary-text | ff-poppins">About us</a></li>
-                        <li><a href="contact.html" class="text-green | fw-200 | fs-primary-text | ff-poppins">Contact</a></li>
+                        <li><a href="freeviewshop.php" class="text-green | fw-200 | fs-primary-text | ff-poppins">Shop</a></li>
+                        <li><a href="freeviewsubs.php" class="text-green | fw-200 | fs-primary-text | ff-poppins">Subscription</a></li>
+                        <li><a href="aboutusview.html" class="text-green | fw-200 | fs-primary-text | ff-poppins">About us</a></li>
+                        <li><a href="contactview.html" class="text-green | fw-200 | fs-primary-text | ff-poppins">Contact</a></li>
+                        <li><a href="statisticview.php" class="text-green | fw-200 | fs-primary-text | ff-poppins">Products</a></li>
+
                     </ul>
                 </nav> 
                 
                 <div class="column" id="column">
                     <button class="userbtn" ><span><img src="./images/profile-user.png" alt=""></span></button>  
-                    <p id="login" class="text-green | fw-200 | fs-primary-text | ff-poppins">Log In</p>
+                    <a href="login.php"><p id="login" class="text-green | fw-200 | fs-primary-text | ff-poppins">Log In</p></a>
                     <a href="shop.html"><button class="button-cart"><img src="./images/cart.svg" alt="cart" style="padding-left: 1.5em;" class="img-cart"></button></a>
                 </div>
             </div>
@@ -50,46 +52,55 @@
     <main>
         <section class="padding-block-900">
             <div class="container">
-                <div class="statement">
-                    <h1 class="fs-third-heading | fw-700 | ff-syne | text-green" style="line-height: 2em;">Shop Flaves</h1>
-                    <p class="fs-primary-text | fw-300 | ff-poppins | text-green" style="line-height: 2em;">Cold-pressed, 100% organic, packed with vitamins, nutrients, and natural goodness.</p><br>
-                </div>  
-                <div class="juices">
-                <div>
-                    <img  src="./images/gp.webp" alt="juice">
-                    <a style="padding-left: 1em;" href="" class="fs-secondary-heading | fw-400 | ff-poppins | text-green">Green Punch</a>
-                    <p style="padding-left: 1.2em;" class="fs-primary-text | fw-300 | ff-poppins | text-black">$6.00</p>
-                </div>
-                <div>
-                    <img src="./images/ac.webp" alt="juice">
-                    <a style="padding-left: 1em;" href="" class="fs-secondary-heading | fw-400 | ff-poppins | text-green">Apple Citrus</a>
-                    <p style="padding-left: 1.2em;" class="fs-primary-text | fw-300 | ff-poppins | text-black">$6.00</p>
-                </div>
-                <div>
-                    <img style="width: 100%;"  src="./images/oz.webp" alt="juice">
-                    <a style="padding-left: 1em;" href="" class="fs-secondary-heading | fw-400 | ff-poppins | text-green">Orange Zest</a>
-                    <p style="padding-left: 1.2em;" class="fs-primary-text | fw-300 | ff-poppins | text-black">$6.00</p>
-                </div>
-                <div>
-                    <img src="./images/pg.webp" alt="juice">
-                    <a style="padding-left: 1em;" href="" class="fs-secondary-heading | fw-400 | ff-poppins | text-green">Pink Grapefruit</a>
-                    <p style="padding-left: 1.2em;" class="fs-primary-text | fw-300 | ff-poppins | text-black">$6.00</p>
-                </div>
-                <div>
-                    <img src="./images/gt.webp" alt="juice">
-                    <a style="padding-left: 1em;" href="" class="fs-secondary-heading | fw-400 | ff-poppins | text-green">Ginger Tangerine</a>
-                    <p style="padding-left: 1.2em;" class="fs-primary-text | fw-300 | ff-poppins | text-black">$6.00</p>
-                </div>
-                <div>
-                    <img src="./images/rl.webp" alt="juice">
-                    <a style="padding-left: 1em;" href="" class="fs-secondary-heading | fw-400 | ff-poppins | text-green">Raspberry Lime</a>
-                    <p style="padding-left: 1.2em;" class="fs-primary-text | fw-300 | ff-poppins | text-black">$6.00</p>
-                </div>
-                   
+                <div class="even-columns" style="gap: 20rem;
+                                                padding-bottom: 4em;">
+                    <div class="flow" style="--spacer:2em">
+                        <h1 class="ff-syne | fs-third-heading | text-green | fw-700" >Get in Touch</h1>
+                        <p class="ff-poppins | fw-400 | text-black | fs-primary-text" style="max-width:40ch;">Fill in the form with your questions, comments and concerns, and we will get right back to you.</p>
+                        <hr>
+                        <h2 class="ff-syne | fs-secondary-heading | text-green | fw-700">Otherways to reach us</h2>
+                        <div class="text">
+                            <div>
+                                <p class="ff-poppins | fs-primary-text | text-black | fw-400">Wholesale enquiries:</p>
+                                <a href="#" class="ff-poppins | fs-primary-text | text-green | fw-400">info@mysite.com</a>
+                            </div>
+                            <div id="myp">
+                                <p class="ff-poppins | fs-primary-text | text-black | fw-400">PR, press or partnerships:</p>
+                                <a href="#" class="ff-poppins | fs-primary-text | text-green | fw-400">info@mysite.com</a>
+                            </div>
+                        </div>
+        
+                        <p class="ff-poppins | fs-primary-text | text-black | fw-400">Address:</p>
+                        <p class="ff-poppins | fs-primary-text | text-black | fw-400">500 Terry Francine St.</p>
+                        <p class="ff-poppins | fs-primary-text | text-black | fw-400">San Francisco,</p>
+                        <p class="ff-poppins | fs-primary-text | text-black | fw-400">CA 94158</p>
+                    </div>
+                    <div class="forms">
+                        <form action="purelave.html" method="post" class="myform">
+                            <div class="text2">
+                                <div>
+                                    <label for="" class="ff-poppins | fw-400 | text-green | fs-primary-text">Firstname *</label><br>
+                                    <input type="text">
+                                </div>
+                                <div>
+                                    <label for="" class="ff-poppins | fw-400 | text-green | fs-primary-text">Last Name *</label><br>
+                                    <input type="text">
+                                </div>
+                            </div><br>
+                            <label for="" class="ff-poppins | fw-400 | text-green | fs-primary-text">Email *</label><br>
+                            <input type="email" style="line-height: 2em;"><br><br>
+                            <label for="" class="ff-poppins | fw-400 | text-green | fs-primary-text">Message</label><br>
+                            <input type="text"><br><br><br>
+                            <div class="my-submit-btn">
+                                <button class="button" data-type="submit-btn">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+    
                 </div>
             </div>
             <hr>
-        </section >
+        </section>
     </main>
 
     <footer>
@@ -98,16 +109,16 @@
                 <div>
                     <ul>
                         <div class="flow" style="--spacer:1em">
-                        <li><a href="terms-conditions.html" class="ff-poppins | fw-200 | fs-secondary-text | text-green">Terms & Conditions</a></li>
-                        <li><a href="privacy.html" class="ff-poppins | fw-200 | fs-secondary-text | text-green">Privacy Policy</a></li>
-                        <li><a href="shipping.html" class="ff-poppins | fw-200 | fs-secondary-text | text-green">Shipping Policy</a></li>
-                        <li><a href="refund.html" class="ff-poppins | fw-200 | fs-secondary-text | text-green">Refund Policy</a></li>
+                        <li><a href="terms-conditionsview.html"  class="ff-poppins | fw-200 | fs-secondary-text | text-green">Terms & Conditions</a></li>
+                        <li><a href="privacyview.html" class="ff-poppins | fw-200 | fs-secondary-text | text-green">Privacy Policy</a></li>
+                        <li><a href="shippingview.html" class="ff-poppins | fw-200 | fs-secondary-text | text-green">Shipping Policy</a></li>
+                        <li><a href="refundview.html" class="ff-poppins | fw-200 | fs-secondary-text | text-green">Refund Policy</a></li>
                     </div> </ul> 
                 </div>
                 <div>
                     <ul>
                         <div class="flow" style="--spacer:1em">
-                        <li><a href="cookie.html" class="ff-poppins | fw-200 | fs-secondary-text | text-green">Cookie Policy​</a></li>
+                        <li><a href="cookieview.html" class="ff-poppins | fw-200 | fs-secondary-text | text-green">Cookie Policy​</a></li>
                         <li><a href="#" class="ff-poppins | fw-200 | fs-secondary-text | text-green">FAQ​</a></li>
                         <li><a href="#" class="ff-poppins | fw-200 | fs-secondary-text | text-green">Payment Methods</a></li>
                     </div></ul>
@@ -158,6 +169,7 @@
             </div>
         </div>
     </footer >
+
 
 
 </body>
